@@ -10,7 +10,7 @@ const Home = () => {
       .get(
         "https://api.telegram.org/bot7863360864:AAH6qjVchEI_IhEAqTWC3KqXd5ZQOVDoTpY/getUpdates"
       )
-      .then((res) => setUser(res.data.result.update_id))
+      .then((res) => setUser(res.data.result.date))
       .catch((err) => console.log(err));
   }, []);
   return <div> hello {user} </div>;
